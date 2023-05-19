@@ -91,7 +91,7 @@ if __name__ == '__main__':
     scale_parser = subparsers.add_parser('scale', help='Scaling resources')
     scale_parser.add_argument('path', metavar='path', type=str, help='Path to the container')
     scale_parser.add_argument('--cpu', metavar='cpu', type=int, help='New number CPU cores')
-    scale_parser.add_argument('--ram', metavar='memory', type=int, help='New memory limit in MB')
+    scale_parser.add_argument('--memory', metavar='memory', type=int, help='New memory limit in MB')
 
     args = parser.parse_args()
 
